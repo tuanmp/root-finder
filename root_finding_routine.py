@@ -12,10 +12,10 @@ def root_finder(function, precision):
     
   	x=(lower+upper)/2.0
   	While abs(function(x)) > precision:
-    	If function(x)>0:
-      		upper = x
-      		x = (lower+upper)/2.0
-    	Else: 
+    		If function(x)>0:
+      			upper = x
+      			x = (lower+upper)/2.0
+    		Else: 
 			lower=x
 			x=(lower+upper)/2.0
 	Return(x)

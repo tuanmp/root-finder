@@ -14,12 +14,12 @@ u = v_0/v_ter
 
 def function(x):
     y = x*u**2*math.tan(launch_angle) + x*u/(math.cos(launch_angle))
-    + math.log(1 - x*u/(math.cos(launch_angle)), math.e)
+    + math.log(1 - x*u/(math.cos(launch_angle)))
     return y
 
 
-x = rf.root_finder(function, 0.00000001)
+r = rf.root_finder(function, 0.00000001)
 
-range = x*r_max
+range = r*r_max
 
 print(range)

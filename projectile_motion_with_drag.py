@@ -13,8 +13,7 @@ u = v_0/v_ter
 
 
 def function(x):
-    y = x*u**2*math.tan(launch_angle) + x*u/(math.cos(launch_angle))
-    + math.log(1 - x*u/(math.cos(launch_angle)))
+    y = x*u**2*math.tan(launch_angle) + x*u/(math.cos(launch_angle)) + math.log(1 - x*u/(math.cos(launch_angle)))
     return y
 
 

@@ -20,4 +20,5 @@ def root_finder(function,precision):
 		else:
 			lower=x
 			x=(lower+upper)/2.0
+	print(x)
 	return(x)
